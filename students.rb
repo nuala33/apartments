@@ -24,5 +24,5 @@ end
 
 full_names.each do |name|
   %x( mkdir #{underscoreize(name)} )
-  %x( touch #{underscoreize(name)}/.gitkeep )
+  %x( cp -R apartment/ #{underscoreize(name)}/apartment/ )
 end
