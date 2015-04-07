@@ -16,6 +16,7 @@
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
+require 'pry'
 
 def create_building
   puts '-----------New Building-----------'
@@ -81,6 +82,7 @@ apartment_count = gets.to_i
     apartment.rent = gets.strip.to_i
   end
 end
+
 
 puts "What would you like to do next, (v)iew all apartments? (q)uit?"
 response = gets.strip
